@@ -1,0 +1,5 @@
+from datasets import load_dataset
+
+dataset = load_dataset("ai4bharat/indicqa")
+
+documents = [item["context"] for item in dataset["train"]]
